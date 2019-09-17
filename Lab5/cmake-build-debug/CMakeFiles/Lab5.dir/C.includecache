@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/dhruvsandesara/Desktop/sem5/ee460n ComArch/Labs/Lab5/lc3bsim5.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+

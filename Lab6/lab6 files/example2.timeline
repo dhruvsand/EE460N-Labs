@@ -1,0 +1,18 @@
+
+F: Fetch stage
+D: Decode stage
+A: AGEX stage
+M: Memory stage
+S: SR stage
+
+		  Cycle             			
+Instruction       1  2  3  4  5  6  7  8  9  10 11 12 13 14 15
+--------------------------------------------------------------
+LEA R0, ANSWER	  F  F  D  A  M  S 
+ADD R1, R1, #5	        F  D  A  M  S
+ADD R2, R2, #4             F  D  A  M  S
+ADD R3, R3, #3                F  D  A  M  S
+ADD R4, R4, #2                   F  D  A  M  S
+LDW R5, R0, #0                      F  D  A  M  M  S
+ADD R6, R3, R3	                       F  D  D  D  A  M  S
+HALT                                            F  D  A  M  S
